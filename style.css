@@ -1,0 +1,157 @@
+/* ------------------- */
+/* Custom Properties   */
+/* ------------------- */
+
+:root {
+  /* colors */
+  --clr-white: 0 0% 100%;
+  --clr-light-gray: 212 45% 89%;
+  --clr-grayish-blue: 220 15% 55%;
+  --clr-dark-blue: 218 44% 22%;
+  /* font size */
+  --fs-800: 2.2rem;
+  --fs-700: 1.6rem;
+  /* font weight */
+  --fw-bold: 700;
+  --fw-regular: 400;
+  /* font-families */
+  --ff-outfit: "Outfit", sans-serif;
+}
+
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Reset font sizing */
+
+html {
+  font-size: 62.5%;
+}
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+div,
+h1,
+img,
+p {
+  margin: 0;
+}
+
+/* set up the body */
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ===================== */
+/*   Utility classes    */
+/* ==================== */
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 35rem;
+  width: 93%;
+}
+
+/* Text */
+
+.text-dark-blue {
+  color: hsl(var(--clr-dark-blue));
+}
+.text-grayblue {
+  color: hsl(var(--clr-grayish-blue));
+}
+
+.ff-outfit {
+  font-family: var(--ff-outfit);
+}
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.fs-800 {
+  font-size: var(--fs-800);
+}
+.fs-700 {
+  font-size: var(--fs-700);
+}
+
+.letter-spacing-1 {
+  letter-spacing: 1.5px;
+}
+.text-align {
+  text-align: center;
+}
+.line-height {
+  line-height: 1.2;
+}
+/* Background */
+
+.bg-white {
+  background-color: hsl(var(--clr-white));
+}
+.bg-light-gray {
+  background-color: hsl(var(--clr-light-gray));
+}
+
+/* Spacing */
+.margin-inline {
+  margin-inline: 1.7rem;
+}
+
+.padding-bot {
+  padding-bottom: 1em;
+}
+.padding-2 {
+  padding: 1.5em;
+}
+
+/* Border-shaping */
+
+.border-rounded {
+  border-radius: 1.7rem;
+}
+
+/* =================== */
+/*      Components    */
+/* =================== */
+
+.img-container {
+  margin-bottom: 2rem;
+}
